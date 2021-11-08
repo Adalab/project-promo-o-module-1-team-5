@@ -1,54 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Proyecto módulo 1</title>
-    <link rel="stylesheet" href="./CSS/reset.css">
-    <link rel="stylesheet" href="./CSS/style.css">
-</head>
+    <link rel="stylesheet" href="./CSS/reset.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1>Serendipia</h1>
-        <nav>
-            <ul>
-                <li><a href="./index.html#team-section">Equipo</a></li>
-                <li>Quienes somos</li>
-                <li><a href="./contact.html"></a>Contacto</li>
-            </ul>
-        </nav>
+      <h1>Serendipia</h1>
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="./index.html#team-section">Equipo</a></li>
+          <li><a href=".index.html#aboutus">Quienes somos</a></li>
+          <li><a href="./contact.html" target="_blank"></a>Contacto</li>
+        </ul>
+      </nav>
+      <!--Imagen portada en html o en css? En header o en main?-->
+      <!--Slogan en header o en main?-->
     </header>
     <main>
-        <img src="./images/coffee-g5529a156d_640.png" alt="ejemplo">
-        <section id="team-section">
-            <p>Equipo</p>
-        </section>
-        <section id="strenghs">
-            <p>Fortalezas</p>
-        </section>
-        <section id="debility">
-            <p>Debilidades</p>
-        </section>
-
-        <section id="aboutus">
-            <article class="Rocio">Rocio</article>
-            <article class="Patri">Patri</article>
-            <article class="Rosa">Rosa</article>
-            <article class="Ana">Ana</article>
-            <article class="Elvira">Elvira</article>
-        </section>
+      <img src="./images/coffee-g5529a156d_640.png" alt="ejemplo" />
+      <section>
+        <div>slogan</div>
+        <!--div provisional, ¿qué tag semática podríamos poner?-->
+      </section>
+      <section id="team-section">
+        <h2>EQUIPO</h2>
+        <p>texto</p>
+      </section>
+      <section id="strenghs">
+        <!--¿Por qué hay que poner id aquí y en debilidades? Fortalezas y debilidades en zeplin están dentro de un mismo contenedor, ¿los metemos dentro de un mismo section con dos sub-cajas?-->
+        <h3>Fortalezas</h3>
+        <p>texto</p>
+      </section>
+      <section id="debility">
+        <p>Debilidades</p>
+      </section>
+      <section id="aboutus">
+        <h2>QUIÉNES SOMOS</h2>
+        <article class="Rocio">
+          <h4>Rocío</h4>
+          <p>texto</p>
+          <div>redes sociales</div>
+          <!--div provisional, creo que vemos los botones de redes esta semana-->
+        </article>
+        <article class="Patri">
+          <h4>Patri</h4>
+          <p>texto</p>
+          <div>redes sociales</div>
+        </article>
+        <article class="Rosa">
+          <h4>Rosa</h4>
+          <p>texto</p>
+          <div>redes sociales</div>
+        </article>
+        <article class="Ana">
+          <h4>Ana</h4>
+          <p>texto</p>
+          <div>redes sociales</div>
+        </article>
+        <article class="Elvira">
+          <h4>Elvira</h4>
+          <p>texto</p>
+          <div>redes sociales</div>
+        </article>
+      </section>
     </main>
     <footer>
-        <section class="footer">
-            <p><a href="index.html"></a>Equipo</p>
-            <p>Quienes somos</p>
-            <p><a href="contact.html"></a>Contacto</p>
-            <small>&copy; Serendipia 2021</small>
-        </section>
+        <small>Serendipia ©2021</small>
+        <nav class="nav-bar">
+          <ul>
+            <li><a href="./index.html#team-section">EQUIPO</a></li>
+            <li><a href="./index.html#aboutus">QUIÉNES SOMOS<a></li>
+            <li><a href="./contact.html">CONTACTO</a></li>
+          </ul>
+           </nav>
+           <img src="./images/logo-adalab.png" alt="logo de Adalab">
     </footer>
-</body>
-
+  </body>
 </html>
