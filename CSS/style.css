@@ -15,3 +15,70 @@ small {
   height: 20px;
   width: 172px;
 }
+/* Mobile first */
+/* Vamos a declarar las variables globales del CSS */
+
+:root {
+  --blue-green: #099d8d;
+  --aqua: #14d9c4;
+}
+
+/* Empezamos con las css para el header */
+
+header {
+  text-transform: uppercase;
+  font-family: Rubik, Arial;
+  opacity: 0.95;
+  height: 105px;
+}
+
+header > div.team-name {
+  background-color: var(--blue-green);
+  text-align: center;
+  height: 60px;
+}
+
+.team-name h1 {
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  line-height: 1.88;
+  padding: 15px;
+}
+
+header .nav-bar ul {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 5px 0;
+  background-color: var(--aqua);
+  height: 45px;
+}
+
+header .nav-bar li {
+  align-items: center;
+  padding: 10px 5px;
+  list-style: none;
+}
+
+header .nav-bar li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Ponemos la foto de cabecera a todo lo ancho para que no se rompa la maqueta en móvil */
+
+.imagecontainer img {
+  width: 100%;
+}
+
+/* Ponemos la foto de footer a todo lo ancho para que no se rompa la maqueta en móvil */
+
+.footer img {
+  width: 100%;
+  max-width: 220px;
+}
+
+/* Abro la media query para pantallas de más de 768 píxeles */
+@media only screen and (min-width: 768px) {
+}
