@@ -1,19 +1,36 @@
-footer {
-  background-color: #fff;
-  width: 320px;
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 250px;
-  /* margin: 2225px 0 0; ¿Esto es necesario?*/
-  padding: 30px 74px 45px;
   border: solid 1px #b8b8b9;
-  display: block;
+  background-color: white;
 }
-small {
-  font-family: OpenSans; /*fuente aún no disponible*/
-  font-size: 14px;
-  text-align: center;
+.copyright {
   color: #b8b8b9;
   height: 20px;
-  width: 172px;
+  font-family: openSans;
+  font-size: 14px;
+  line-height: 20px;
+}
+.nav-bar {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 29px 30px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  color: #54585a;
+  opacity: 0.75;
+  text-transform: uppercase;
+  line-height: 20px;
+}
+.logo-adalab {
+  width: 115.9px;
+  height: 45px;
+}
+a {
+  color: #54585a;
 }
 /* Mobile first */
 /* Vamos a declarar las variables globales del CSS */
