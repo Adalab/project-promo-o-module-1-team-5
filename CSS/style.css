@@ -1,69 +1,165 @@
 /* Mobile first */
 /* Vamos a declarar las variables globales del CSS */
 
-:root{
-    --blue-green: #099d8d;
-    --aqua: #14d9c4;
+:root {
+  --blue-green: #099d8d;
+  --aqua: #14d9c4;
 }
 
 /* Empezamos con las css para el header */
 
 header {
+<<<<<<< HEAD
     text-transform: uppercase;
     font-family: Rubik, Arial;
     opacity: 0.95;
     height: 105px;
     width:100vw;
+=======
+  text-transform: uppercase;
+  font-family: Rubik, Arial;
+  opacity: 0.95;
+  /*height: 105px;*/
+>>>>>>> refs/remotes/origin/main
 }
 
 header > div.team-name {
-    background-color: var(--blue-green);
-    text-align:center;
-    height: 60px;
+  background-color: var(--blue-green);
+  text-align: center;
+  height: 60px;
 }
 
 .team-name h1 {
-    font-size: 16px;
-    text-align: center;
-    color: #fff;
-    line-height: 1.88;
-    padding: 15px;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  line-height: 1.88;
+  padding: 15px;
 }
 
 header .nav-bar ul {
-    display: flex;
-    justify-content: space-around;
-    margin: 0;
-    padding: 5px 0;
-    background-color: var(--aqua);
-    height: 45px;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 5px 0;
+  background-color: var(--aqua);
+  height: 45px;
 }
 
 header .nav-bar li {
-    align-items: center;
-    padding: 10px 5px;
-    list-style: none;
+  align-items: center;
+  padding: 10px 5px;
+  list-style: none;
 }
 
 header .nav-bar li a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 /* Ponemos la foto de cabecera a todo lo ancho para que no se rompa la maqueta en móvil */
 
-.imagecontainer img {
-    width: 100%;
+/*.imagecontainer {
+  background-image: url("../images/imagenFondoChicas.jpg");
+  height: 316px;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}*/
+.slogan-image {
+  max-width: 100%;
+  width: 100%;
 }
 
+.team {
+  max-width: 320px;
+  height: 500px;
+}
+
+/* Aqui empieza el Css de main */
+
+main {
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 15px;
+}
+.team {
+  height: 500px;
+}
+
+.page-main {
+  margin-top: 16px;
+}
+.team-title {
+  margin-top: 30px;
+  margin-left: 115px;
+  margin-right: 115px;
+  margin-bottom: 15px;
+}
 /* Ponemos la foto de footer a todo lo ancho para que no se rompa la maqueta en móvil */
 
 .footer img {
-    width: 100%;
-    max-width: 220px;
+  width: 100%;
+  max-width: 220px;
+}
+.footer {
+  background-color: white;
+  display: flex;
+  height: 250px;
+  border: solid 1px #b8b8b9;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.copyright {
+  color: #b8b8b9;
+  font-family: openSans;
+  font-size: 14px;
+  line-height: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer .nav-bar {
+  color: #54585a;
+  opacity: 0.75;
+  margin: 20px 29px 30px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: OpenSans-Semibold;
+  text-transform: uppercase;
+  line-height: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.ul-footer {
+  text-align: center;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: center;
+}
+.logo-adalab {
+  width: 115.9px;
+  height: 45px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+a {
+  color: #54585a;
 }
 
 /* Abro la media query para pantallas de más de 768 píxeles */
-@media only screen and (min-width:768px) {
-
+@media only screen and (min-width: 768px) {
 }
