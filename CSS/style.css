@@ -9,18 +9,10 @@
 /* Empezamos con las css para el header */
 
 header {
-<<<<<<< HEAD
-    text-transform: uppercase;
-    font-family: Rubik, Arial;
-    opacity: 0.95;
-    height: 105px;
-    width:100vw;
-=======
   text-transform: uppercase;
   font-family: Rubik, Arial;
   opacity: 0.95;
   /*height: 105px;*/
->>>>>>> refs/remotes/origin/main
 }
 
 header > div.team-name {
