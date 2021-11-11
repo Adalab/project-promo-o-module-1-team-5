@@ -9,9 +9,9 @@
 /* Empezamos con las css para el header */
 
 header {
-    text-transform: uppercase;
-    font-family: Rubik, Arial;
-    opacity: 0.95;
+  text-transform: uppercase;
+  font-family: Rubik, Arial;
+  opacity: 0.95;
   /* height: 105px; */
   /*height: 105px;*/
 }
