@@ -64,15 +64,11 @@ header .nav-bar li a {
   width: 100%;
 }
 
-.team {
-  max-width: 320px;
-  height: 500px;
-}
 
-/* Aqui empieza el Css de main */
+/*--------------- Aqui empieza el Css de main ----------------------*/
 
-main {
-  max-width: 320px;
+.page-main {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -80,9 +76,6 @@ main {
   font-size: 16px;
   line-height: 1.5;
   margin: 15px;
-}
-.team {
-  height: 500px;
 }
 
 .page-main {
@@ -94,6 +87,20 @@ main {
   margin-right: 115px;
   margin-bottom: 15px;
 }
+.features{
+  background-color: #b8b8b9;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  
+}
+.title3{
+  text-align: center;
+  color: #099d8d;
+ 
+}
+
+
 /* Ponemos la foto de footer a todo lo ancho para que no se rompa la maqueta en móvil */
 
 .footer img {
