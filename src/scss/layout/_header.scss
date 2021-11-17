@@ -1,6 +1,80 @@
-/* header styles */
+.header {
+  width: 100%;
+  height: 421px;
+}
+.container-nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+.header-name {
+  background-color: #099d8d;
+ opacity: 0.8;
+  font-family: 'rubik', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  line-height: 30px;
+  text-transform: uppercase;
+  padding: 15px 80px;
+  box-sizing: border-box;
+}
+.header-nav {
+  width: 100%;
+  background-color: var(--aqua);
+  opacity: 0.8;
+  font-family: 'rubik', sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 15px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ }
+.menu-header-nav {
+  font-family: 'rubik', sans-serif;
+  font-size: 15px;
+  color: #fff;    
+}
+.link-nav {
+  color: #fff;
+}
+.img-header {
+  width: 100%;
+  height: 421px;
+  object-fit: cover;
+  position: relative;
+  top: 0;
+}
+.slogan-box {
+  width: 90%;
+  height: 80px;
+  margin: 270px 20px 0px;
+  padding: 14px 15px 16px;
+  background-color: #fff;
+  position: absolute;
+  margin-top: 387px;
+}
+.slogan-text {
+  width: 290px;
+  height: 50px;
+  margin: 0 auto;
+  background-color: #fff;
+  font-family: 'open sans', sans-serif;
+  font-weight: 600;
+  color: black;
+  text-align: center;
+}
 
-header {
+
+
+/*header {
   width: 100%;
   background-image: url("../images/bk_home.jpg");
   background-repeat: no-repeat;
@@ -67,4 +141,29 @@ header .nav-bar li a {
   font-weight: 600;
   line-height: 25px;
   text-align: center;
+}*/
+
+@media all and (min-width: 768px) {
+.container-nav {
+ display: flex;
+}
+  .header-name {
+    width: 80%;
+    text-align: start;
+   
+}
+
+.header-nav {
+  background-color: #099d8d;
+  box-sizing: border-box;
+ height: 60px;
+ text-align: center;
+ display: flex;
+}
+.menu-header-nav {
+  width: 100%;
+  padding-right: 50px;
+  justify-content: space-around;
+
+}
 }
