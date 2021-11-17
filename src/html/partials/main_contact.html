@@ -1,6 +1,6 @@
 <main class="container">
   <div class="columna-contacto">
-    <section class="seccion">
+    <section class="section-contact">
       <h1 class="title-contact">CONTACTO</h1>
       <p class="text-contact">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
@@ -12,34 +12,35 @@
         eaque temporibus. Similique rerum quisquam enim.</p>
       <p class="seccion-text">Todos los campos marcados con <span>*</span>son obligatorios.</p>
 
-
-      <form action="" method="post" class="section">
-        <div class="section-contact-form-name">
+      <form action="" method="post" class="contact-form">
+        <div class="form-name">
           <label for="firstname">
             Nombre Completo
             <span class="star">*</span>
           </label>
-          <input type="text" id="name" name="name" placeholder="Nombre completo" required />
+          <input class="formulario-box" type="text" id="name" name="name" placeholder="Nombre completo" required />
         </div>
         <div class="contact-email">
           <label for="email">
             E-mail
             <span>*</span>
           </label>
-          <input type="email" id="email" name="email" placeholder="@email.com" required />
+          <input class="formulario-box" type="email" id="email" name="email" placeholder="@email.com" required />
         </div>
         <div class="contact-phone">
           <label for="phone"> Phone </label>
-          <input type="tel" id="tel" name="tel" placeholder="ex.: (+34) 654 123 456" />
+          <input class="formulario-box" type="tel" id="tel" name="tel" placeholder="ex.: (+34) 654 123 456" />
         </div>
         <div class="contact-messaje">
           <label for="mensaje">
+            Mensaje
             <span>*</span>
           </label>
-          <textarea id="mensaje" rows="8" cols="25%" placeholder="¿Que necesitas?" required></textarea>
+          <textarea class="formulario-box contact-messaje" id="mensaje" rows="8" cols="25%"
+            placeholder="¿Que necesitas?" required></textarea>
         </div>
         <div>
-          <input class="form-bottom" type="submit" value="Enviar" />
+          <input class="formulario-box boton-formulario" type="submit" value="Enviar" />
         </div>
       </form>
     </section>
