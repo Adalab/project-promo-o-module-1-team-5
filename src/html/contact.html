@@ -1,82 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+    <!--link googlefonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="./CSS/reset.css" />
-  <link rel="stylesheet" href="./CSS/style.css" />
-</head>
+    <!-- <link rel="stylesheet" href="./CSS/reset.css" />-->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
 
-<body>
-  <include src="./partials/header.html"> </include>
-  <main>
-    <section class="section-content">
-      <h1 class="title-contact">CONTACTO</h1>
-      <p class="text-contact">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-        debitis dolores maiores mollitia aut repellendus maxime, perferendis
-        illum repudiandae ab corrupti sequi! Ipsum eius harum corporis sequi
-        officiis, minima pariatur. Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Quis deleniti dolore dolorem dolorum? Veniam rem,
-        eligendi commodi reprehenderit sunt tenetur officia est atque unde
-        eaque temporibus. Similique rerum quisquam enim.
-        <small>Todos los campos marcados con * son obligatorios.</small>
-        <!--Aquí iría el formulario-->
-      <form action="" method="post">
-        <div>
-          <label for="firstname">
-            Nombre Completo
-            <span class="star">*</span>
-          </label>
-          <input type="text" id="name" name="name" placeholder="Nombre completo" required />
-        </div>
-        <div>
-          <label for="email">
-            E-mail
-            <span>*</span>
-          </label>
-          <input type="email" id="email" name="email" placeholder="@email.com" required />
-        </div>
-        <div>
-          <label for="phone"> Phone </label>
-          <input type="tel" id="tel" name="tel" placeholder="ex.: (+34) 654 123 456" />
-        </div>
-        <div>
-          <label for="mensaje">
-            <span>*</span>
-          </label>
-          <textarea id="mensaje" rows="8" cols="25%" placeholder="¿Que necesitas?" required></textarea>
-        </div>
-        <div>
-          <input type="submit" value="Enviar" />
-        </div>
-      </form>
-      </p>
-    </section>
-  </main>
-  <footer>
-    <section class="footer">
-      <small class="copyright"> Serendipia &copy; 2021</small>
-      <nav class="nav-bar">
-        <ul class="ul-footer">
-          <li><a href="./index.html#team-section">Equipo</a></li>
-          <li><a href=".index.html#aboutus">Quiénes somos</a></li>
-          <li><a href="./contact.html" target="_blank">Contacto</a></li>
-        </ul>
-      </nav>
-      <img class="logo-adalab" src="./images/logo-adalab.png" alt="icono Adalab" />
-    </section>
-  </footer>
-</body>
-
+  <body>
+    <include src="./partials/header.html"> </include>
+    <include src="./partials/main_contact.html"></include>
+    <include src="./partials/footer.html"></include>
+  </body>
 </html>

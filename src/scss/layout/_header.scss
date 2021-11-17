@@ -1,5 +1,169 @@
-.page__header {
+.header {
+  width: 100%;
+  height: 421px;
+}
+.container-nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+.header-name {
+  background-color: #099d8d;
+ opacity: 0.8;
+  font-family: 'rubik', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  line-height: 30px;
+  text-transform: uppercase;
+  padding: 15px 80px;
+  box-sizing: border-box;
+}
+.header-nav {
+  width: 100%;
+  background-color: var(--aqua);
+  opacity: 0.8;
+  font-family: 'rubik', sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 15px;
+  box-sizing: border-box;
   display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
+  justify-content: space-around;
+  align-items: center;
+ }
+.menu-header-nav {
+  font-family: 'rubik', sans-serif;
+  font-size: 15px;
+  color: #fff;    
+}
+.link-nav {
+  color: #fff;
+}
+.img-header {
+  width: 100%;
+  height: 421px;
+  object-fit: cover;
+  position: relative;
+  top: 0;
+}
+.slogan-box {
+  width: 90%;
+  height: 80px;
+  margin: 270px 20px 0px;
+  padding: 14px 15px 16px;
+  background-color: #fff;
+  position: absolute;
+  margin-top: 387px;
+}
+.slogan-text {
+  width: 290px;
+  height: 50px;
+  margin: 0 auto;
+  background-color: #fff;
+  font-family: 'open sans', sans-serif;
+  font-weight: 600;
+  color: black;
+  text-align: center;
+}
+
+
+
+/*header {
+  width: 100%;
+  background-image: url("../images/bk_home.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 500px;
+}
+
+header > div.team-name {
+  background-color: var(--blue-green);
+  text-align: center;
+  height: 60px;
+}
+
+.team-name h1 {
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  line-height: 1.88;
+  padding: 15px;
+  text-transform: uppercase;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+}
+
+header .nav-bar ul {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 5px 0;
+  background-color: var(--aqua);
+  height: 45px;
+}
+
+header .nav-bar li {
+  align-items: center;
+  padding: 10px 5px;
+  list-style: none;
+  text-transform: uppercase;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+}
+
+header .nav-bar li a {
+  color: #fff;
+  text-decoration: none;
+}
+.slogan-image {
+  max-width: 100%;
+  width: 100%;
+}
+.slogan-title {
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+  font-size: 18px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 0px;
+  transform: translateY(350px);
+  height: 40px;
+  padding: 5px;
+  font-weight: 600;
+  line-height: 25px;
+  text-align: center;
+}*/
+
+@media all and (min-width: 768px) {
+.container-nav {
+ display: flex;
+}
+  .header-name {
+    width: 80%;
+    text-align: start;
+   
+}
+
+.header-nav {
+  background-color: #099d8d;
+  box-sizing: border-box;
+ height: 60px;
+ text-align: center;
+ display: flex;
+}
+.menu-header-nav {
+  width: 100%;
+  padding-right: 50px;
+  justify-content: space-around;
+
+}
 }
