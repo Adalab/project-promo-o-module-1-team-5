@@ -1,5 +1,6 @@
-<main>
-    <section class="section-content">
+<main class="container">
+  <div class="columna-contacto">
+    <section class="section-contact">
       <h1 class="title-contact">CONTACTO</h1>
       <p class="text-contact">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
@@ -8,38 +9,40 @@
         officiis, minima pariatur. Lorem ipsum dolor sit amet consectetur
         adipisicing elit. Quis deleniti dolore dolorem dolorum? Veniam rem,
         eligendi commodi reprehenderit sunt tenetur officia est atque unde
-        eaque temporibus. Similique rerum quisquam enim.
-        <small>Todos los campos marcados con * son obligatorios.</small>
-        <!--Aquí iría el formulario-->
-      <form action="" method="post">
-        <div>
+        eaque temporibus. Similique rerum quisquam enim.</p>
+      <p class="seccion-text">Todos los campos marcados con <span>*</span>son obligatorios.</p>
+
+      <form action="" method="post" class="contact-form">
+        <div class="form-name">
           <label for="firstname">
             Nombre Completo
             <span class="star">*</span>
           </label>
-          <input type="text" id="name" name="name" placeholder="Nombre completo" required />
+          <input class="formulario-box" type="text" id="name" name="name" placeholder="Nombre completo" required />
         </div>
-        <div>
+        <div class="contact-email">
           <label for="email">
             E-mail
             <span>*</span>
           </label>
-          <input type="email" id="email" name="email" placeholder="@email.com" required />
+          <input class="formulario-box" type="email" id="email" name="email" placeholder="@email.com" required />
         </div>
-        <div>
+        <div class="contact-phone">
           <label for="phone"> Phone </label>
-          <input type="tel" id="tel" name="tel" placeholder="ex.: (+34) 654 123 456" />
+          <input class="formulario-box" type="tel" id="tel" name="tel" placeholder="ex.: (+34) 654 123 456" />
         </div>
-        <div>
+        <div class="contact-messaje">
           <label for="mensaje">
+            Mensaje
             <span>*</span>
           </label>
-          <textarea id="mensaje" rows="8" cols="25%" placeholder="¿Que necesitas?" required></textarea>
+          <textarea class="formulario-box contact-messaje" id="mensaje" rows="8" cols="25%"
+            placeholder="¿Que necesitas?" required></textarea>
         </div>
         <div>
-          <input type="submit" value="Enviar" />
+          <input class="formulario-box boton-formulario" type="submit" value="Enviar" />
         </div>
       </form>
-      </p>
     </section>
-  </main>
+  </div>
+</main>

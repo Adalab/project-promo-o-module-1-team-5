@@ -65,6 +65,7 @@ header .nav-bar li a {
   font-weight: 600;
   line-height: 25px;
   text-align: center;
+<<<<<<< HEAD
 }
 @media all and (min-width: 768px) {
   .team-name {
@@ -85,6 +86,19 @@ header .nav-bar li a {
   .container-nav {
     display: flex;
   }
+=======
+}*/
+
+@media all and (min-width: 768px) {
+  .container-nav {
+    display: flex;
+  }
+  .header-name {
+    width: 80%;
+    text-align: start;
+  }
+
+>>>>>>> 3af1660ccfe434a46ac3015d3ca1086c96c3c2cb
   .header-nav {
     background-color: #099d8d;
     box-sizing: border-box;
