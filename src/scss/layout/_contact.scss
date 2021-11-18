@@ -7,7 +7,10 @@
   margin-bottom: 60px;
 }
 .foto-contact {
-  background-image: url(../images/bk_contact.jpg);
+  background-image: url("../images/image_contactMobile.jpg");
+  @media all and (min-width:768px){
+    background-image: url("../images/image_contactDesktop.jpg");
+  }
 }
 
 .section-contact {
