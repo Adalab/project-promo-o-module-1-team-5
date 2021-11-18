@@ -8,7 +8,7 @@
 }
 .foto-contact {
   background-image: url("../images/image_contactMobile.jpg");
-  @media all and (min-width:768px){
+  @media all and (min-width: 768px) {
     background-image: url("../images/image_contactDesktop.jpg");
   }
 }
@@ -41,7 +41,7 @@
   width: 100%;
 }
 .star {
-  color:#14d9c4;
+  color: #14d9c4;
 }
 
 .form-name {
