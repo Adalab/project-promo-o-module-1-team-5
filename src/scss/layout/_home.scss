@@ -78,13 +78,31 @@
   line-height: 45px;
   color: black;
 }
-.socialNetworks {
+
+.rrss-icons {
+  color: #099D8D;
+  width: 150px;
   display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  background-color: red;
-  padding: 10px;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  @media all and (min-width: 678px) {
+    margin-left: 3em;
+    margin-right: 4em;
+  }
 }
+.rrss-icons a {
+  color: #099D8D;
+}
+
+// .socialNetworks {
+//   display: flex;
+//   justify-content: space-around;
+//   flex-direction: row;
+//   background-color: red;
+//   padding: 10px;
+// }
+
 .fab {
   color: #099d8d;
 }
