@@ -1,19 +1,16 @@
-
-header {
+.header {
   width: 100%;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 500px;
 }
-
 .index-foto {
   background-image: url("../images/bk_home_mobile.jpg");
-  @media all and (min-width:768px){
+  @media all and (min-width: 768px) {
     background-image: url("../images/bk_home_big.jpg");
   }
 }
-
-header > div.team-name {
+.header .team-name {
   background-color: var(--blue-green);
   text-align: center;
   height: 60px;
@@ -28,30 +25,26 @@ header > div.team-name {
   font-family: "Rubik", sans-serif;
   font-weight: 500;
 }
-header .nav-bar ul {
+.header .nav-bar .nav-list {
   display: flex;
   justify-content: space-around;
   margin: 0;
   padding: 5px 0;
   background-color: var(--aqua);
   height: 45px;
+  align-items: center;
 }
-header .nav-bar li {
+.header .nav-bar li {
   align-items: center;
   padding: 10px 5px;
-  list-style: none;
   text-transform: uppercase;
   font-family: "Rubik", sans-serif;
   font-weight: 300;
 }
-header .nav-bar li a {
+.header .nav-bar .nav-item a {
   color: #fff;
   text-decoration: none;
-  padding: 0 10px 0 10px;
-  padding-top: 0px;
-  padding-right: 10px;
-  padding-bottom: 0px;
-  padding-left: 10px;
+  padding: 0 10px;
 }
 .slogan-image {
   max-width: 100%;
@@ -64,12 +57,11 @@ header .nav-bar li a {
   position: relative;
   z-index: 1;
   font-size: 18px;
-  margin-left: 15px;
   margin-right: 15px;
-  margin-top: 0px;
-  transform: translateY(350px);
+  margin-left: 15px;
+  transform: translateY(410px);
   height: 40px;
-  padding: 5px;
+  padding: 15px;
   font-weight: 600;
   line-height: 25px;
   text-align: center;
@@ -80,37 +72,38 @@ header .nav-bar li a {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-   
   }
   .team-name .header-name {
     text-align: start;
     padding: 0;
-    
   }
-  .nav-bar{
+  .nav-bar {
     padding-right: 45px;
   }
+  .header .nav-list {
+    background-color: var(--blue-green) !important;
+  }
   .nav-bar .nav-list {
-    background-color: transparent;
     padding: 0;
     height: auto;
   }
   .container-nav {
     display: flex;
   }
-  .header-nav {
-    background-color: #099d8d;
-    box-sizing: border-box;
-    height: 60px;
-    text-align: center;
-    display: flex;
-  }
-  .menu-header-nav {
-    width: 100%;
-    padding-right: 50px;
-    justify-content: space-around;
-  }
-  .team-name .header-name{
+  .team-name .header-name {
     padding-left: 45px;
+  }
+
+  .slogan-title {
+    opacity: 80%;
+    transform: translateY(380px);
+    width: 60%;
+    margin-left: 2.8em;
+    padding-top: 5px;
+
+    @media all and (min-width: 1024px) {
+      max-width: 40%;
+      text-align: center;
+    }
   }
 }
