@@ -95,15 +95,9 @@
   }
 
   .slogan-title {
-    opacity: 80%;
-    transform: translateY(380px);
-    width: 60%;
-    margin-left: 2.8em;
-    padding-top: 5px;
-
-    @media all and (min-width: 1024px) {
-      max-width: 40%;
-      text-align: center;
-    }
+  width: 70%;
+  opacity: .8;
+  transform: translateY(390px);
+  margin-left: 10%;
   }
 }
