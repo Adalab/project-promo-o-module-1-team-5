@@ -1,0 +1,27 @@
+.characteristics {
+  margin: 0px;
+  padding: 0px;
+  background-color: $coolGrey;
+  display: flex;
+  flex-direction: column;
+
+
+  &__title {
+    text-align: center;
+    color: $blueGreen;
+    padding-top: 30px;
+    font-family: $titleFF;
+    line-height: $titleLH;
+    font-size: $titleMinusFS;
+  
+  }
+  &__text {
+    text-align: center;
+    font-size: $avFS;
+    line-height: $smallLH;
+    font-family: $textFF;
+    padding: 15px;
+    color: $grey;
+   
+  }
+}

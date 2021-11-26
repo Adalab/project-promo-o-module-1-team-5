@@ -1,0 +1,32 @@
+.team {
+  transform: translateY(-10px);
+  background-color: $white;
+  padding: 0 15px 0 15px;;
+
+  &__title {
+    @include titleMain;
+    padding-top: 46px;
+    padding-bottom: 15px;
+    /*
+      margin-top: 46px;
+      text-align: center;
+      color: $aqua;
+      font-size: $titleFS;
+      font-family: $titleFF;
+      padding-top: 46px;
+      padding-bottom: 15px;*/
+  }
+  &__text {
+    @include textMain;
+    padding-bottom: 30px;
+    /*
+    text-align: center;
+    font-size: $avFS;
+    line-height: $smallLH;
+    font-family: $textFF;
+    padding: 15px;
+    color: $grey;
+    padding-bottom: 15px;
+  */
+}
+}

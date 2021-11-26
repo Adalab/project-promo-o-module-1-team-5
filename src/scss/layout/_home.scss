@@ -1,5 +1,13 @@
 /* main styles */
+.section-characteristics {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 45px;
 
+  @media all and (min-width:768px){
+    flex-direction: row;
+  }
+}
 .rectangle {
   background-color: white;
   width: 30px;
@@ -77,7 +85,8 @@
     flex-direction: row;
   }
 
-  PARA ALINEAR A LA DERECHA .who:nth-child(2n + 1) {
+  /*PARA ALINEAR A LA DERECHA*/
+  .who:nth-child(2n + 1) {
     align-items: flex-end;
     text-align: right;
   }
@@ -94,15 +103,18 @@
     text-align: right;
     margin-right: 20px;
   }
-  .who:nth-child(2n + 1) .who__content--text {
+  .who:nth-child(2n + 1) 
+  .who__content--text {
     text-align: right;
     margin-right: 20px;
   }
-  .who:nth-child(2n + 1) .who__content--rrss-icons {
+  .who:nth-child(2n + 1) 
+  .who__content--rrss-icons {
     text-align: right;
     margin-right: 20px;
   }
-  PARA ALINEAR A LA IZQUIERDA .who:nth-child(2n) {
+  /*PARA ALINEAR A LA IZQUIERDA*/
+  .who:nth-child(2n) {
     align-items: flex-start;
     text-align: right;
   }
