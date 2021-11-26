@@ -1,6 +1,33 @@
-:root {
-    --blue-green: #099d8d;
-    --aqua: #14d9c4;
-  }
+/*COLOR*/
+$blueGreen: #099d8d;
+$aqua: #14d9c4;
+$white: #fff;
+$black: #000;
+$grey: #54585a;
+$coolGrey: #b8b8b9;
 
-$rubikTitle:"Rubik", sans-serif, 500;
+/*FONT-SIZE*/
+$smallFS: 14px;
+$avMinusFS: 15px;
+$avFS: 16px;
+$avPlusFS: 18px;
+$subtitleFS: 20px;
+$titleMinusFS: 22px;
+$titleFS: 24px;
+
+/*LINE-HEIGHT*/
+$miniLH: 20px;
+$smallLH: 24px;
+$regularMinusLH: 25px;
+$regularLH: 30px;
+$titleLH: 45px;
+
+/*FONT-FAMILY*/
+$titleFF: 'Rubik', sans-serif;
+$textFF: 'open sans', sans-serif;
+
+/*OPACITY*/
+$navNameO: .95;
+$navBarO: .9;
+$sloganO: .8;
+$teamDescripO: .2;
