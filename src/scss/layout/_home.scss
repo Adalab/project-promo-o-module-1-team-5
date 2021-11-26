@@ -54,52 +54,53 @@
 .who {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &--textname {
+      margin: 0px;
+      padding: 0px;
+      font-family: "Open Sans", sans-serif;
+      font-size: 20px;
+      font-weight: normal;
+      line-height: 45px;
+      color: black;
+      text-align: center;
+    }
+
+    &--text {
+      margin: 0px;
+      padding: 0px;
+    }
+    &--rrss-icons {
+      color: #099d8d;
+      width: 150px;
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      margin-top: 15px;
+      margin-bottom: 25px;
+      &a {
+        color: #099d8d;
+      }
+      @media all and (min-width: 768px) {
+        margin-left: 3em;
+        margin-right: 4em;
+      }
+    }
+  }
 }
-.who__content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.who .textname {
-  margin: 0px;
-  padding: 0px;
-}
-.who .text {
-  margin: 0px;
-  padding: 0px;
-}
+
 .picture {
   border-radius: 4px;
   border: solid 5px rgba(0, 0, 0, 0.08);
   align-items: center;
-}
-.textname {
-  font-family: "Open Sans", sans-serif;
-  font-size: 20px;
-  font-weight: normal;
-  line-height: 45px;
-  color: black;
-  text-align: center;
-}
-
-.rrss-icons {
-  color: #099d8d;
-  width: 150px;
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  margin-top: 15px;
-  margin-bottom: 25px;
-  @media all and (min-width: 768px) {
-    margin-left: 3em;
-    margin-right: 4em;
-  }
-}
-.rrss-icons a {
-  color: #099d8d;
 }
 
 // .socialNetworks {
@@ -136,7 +137,6 @@
   .strengh {
     margin-right: 45px;
   }
-
   .whos {
     display: flex;
     flex-wrap: wrap;
@@ -145,53 +145,53 @@
     flex-direction: row;
   }
 
-  /*PARA ALINEAR A LA DERECHA*/
-  .who:nth-child(2n + 1) {
+  PARA ALINEAR A LA DERECHA .who:nth-child(2n + 1) {
     align-items: flex-end;
     text-align: right;
   }
-  .who:nth-child(2n + 1) .who-content {
+  .who:nth-child(2n + 1) .who__content {
     align-items: flex-end;
     margin-left: 100px;
   }
-  .who:nth-child(2n + 1) .picture {
+  .who:nth-child(2n + 1) .who__image {
     order: 2;
     margin-right: 60px;
+    align-items: flex-end;
   }
-  .who:nth-child(2n + 1) .textname {
+  .who:nth-child(2n + 1) .who__content--textname {
     text-align: right;
     margin-right: 20px;
   }
-  .who:nth-child(2n + 1) .text {
+  .who:nth-child(2n + 1) .who__content--text {
     text-align: right;
     margin-right: 20px;
   }
-  .who:nth-child(2n + 1) .rrss-icons {
+  .who:nth-child(2n + 1) .who__content--rrss-icons {
     text-align: right;
     margin-right: 20px;
   }
-  /*PARA ALINEAR A LA IZQUIERDA*/
-  .who:nth-child(2n) {
+  PARA ALINEAR A LA IZQUIERDA .who:nth-child(2n) {
     align-items: flex-start;
     text-align: right;
   }
-  .who:nth-child(2n) .who-content {
+  .who:nth-child(2n) .who__content {
     align-items: flex-start;
     margin-right: 100px;
   }
-  .who:nth-child(2n) .picture {
+  .who:nth-child(2n) .who__image {
     order: 0;
     margin-left: 60px;
+    justify-content: flex-end;
   }
-  .who:nth-child(2n) .textname {
+  .who:nth-child(2n) .who__content--textname {
     margin-left: 20px;
     text-align: left;
   }
-  .who:nth-child(2n) .text {
+  .who:nth-child(2n) .who__content--text {
     text-align: left;
     margin-left: 20px;
   }
-  .who:nth-child(2n) .rrss-icons {
+  .who:nth-child(2n) .who__content--rrss-icons {
     text-align: left;
     margin-left: 20px;
   }
