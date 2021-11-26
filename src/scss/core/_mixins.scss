@@ -1,0 +1,101 @@
+/********FONT********/
+@mixin rubikMedium {
+  font-family: $titleFF;
+  font-weight: 500;
+}
+@mixin openSans {
+  font-family: $textFF;
+  font-weight: 400;
+}
+@mixin openSansSemibold {
+  font-family: $textFF;
+  font-weight: 600;
+}
+
+/********TEXT********/
+
+/*main*/
+@mixin titleMain {
+  @include rubikMedium;
+  font-size: $titleFS;
+  line-height: $titleLH;
+  text-align: center;
+  color: $blueGreen;
+  text-transform: uppercase;
+}
+@mixin textMain {
+  @include openSans;
+  font-size: $avFS;
+  line-height: $smallLH;
+  color: $grey;
+}
+@mixin ourNames {
+  @include openSans;
+  font-size: $subtitleFS;
+  line-height: $titleLH;
+  color: $black;
+  text-transform: capitalize;
+}
+
+/*footer*/
+
+@mixin copyFooter {
+    @include openSans;
+    font-size: $smallFS;
+    line-height: $miniLH;
+    text-align: center;
+    color: $coolGrey;
+    @media all and (min-width: 768px) {
+        text-align: left;
+    }
+}
+
+@mixin navFooter {
+    @include openSansSemibold;
+    font-size: $smallFS;
+    line-height: $miniLH;
+    text-transform: uppercase;
+    text-align: center;
+    color: $grey;
+    @media all and (min-width: 768px) {
+        text-align: right;
+    }
+}
+
+/*form*/
+@mixin formText {
+  @include openSans;
+  font-size: $smallFS;
+  color: $grey;
+}
+
+@mixin asterisk {
+  @include openSans;
+  font-size: $smallFS;
+  color: $aqua;
+}
+
+@mixin placeHoldText {
+  @include openSans;
+  font-size: $smallFS;
+  color: $coolGrey;
+  align-items: flex-start;
+  padding-left: 15px;
+  padding-top: 11px;
+}
+
+@mixin btnForm {
+    @include openSansSemibold;
+    font-size: $avFS;
+    text-align: center;
+    color: $white;
+    text-transform: uppercase;
+}
+
+/********PADDING********/
+@mixin padMobile {
+  padding: 30px 15px;
+}
+@mixin padTablet {
+  padding: 0 45px;
+}
