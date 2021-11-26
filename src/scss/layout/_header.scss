@@ -11,18 +11,19 @@
   }
 }
 .header .team-name {
-  background-color: var(--blue-green);
+  background-color: $blueGreen;
   text-align: center;
   height: 60px;
+  opacity: 0.8;
 }
 .team-name .header-name {
-  font-size: 16px;
+  font-size: $avFS;
   text-align: center;
-  color: #fff;
+  color: $white;
   line-height: 1.88;
   padding: 15px;
   text-transform: uppercase;
-  font-family: "Rubik", sans-serif;
+  font-family: $titleFF;
   font-weight: 500;
 }
 .header .nav-bar .nav-list {
@@ -30,7 +31,7 @@
   justify-content: space-around;
   margin: 0;
   padding: 5px 0;
-  background-color: var(--aqua);
+  background-color: $aqua;
   height: 45px;
   align-items: center;
 }
@@ -38,11 +39,11 @@
   align-items: center;
   padding: 10px 5px;
   text-transform: uppercase;
-  font-family: "Rubik", sans-serif;
+  font-family: $titleFF;
   font-weight: 300;
 }
 .header .nav-bar .nav-item a {
-  color: #fff;
+  color: $white;
   text-decoration: none;
   padding: 0 10px;
 }
@@ -51,12 +52,12 @@
   width: 100%;
 }
 .slogan-title {
-  color: black;
-  font-family: "Open Sans", sans-serif;
-  background-color: #fff;
+  color: $black;
+  font-family: $textFF;
+  background-color: $white;
   position: relative;
   z-index: 1;
-  font-size: 18px;
+  font-size: $avPlusFS;
   margin-right: 15px;
   margin-left: 15px;
   transform: translateY(410px);
@@ -81,7 +82,7 @@
     padding-right: 45px;
   }
   .header .nav-list {
-    background-color: var(--blue-green) !important;
+    background-color: $blueGreen !important;
   }
   .nav-bar .nav-list {
     padding: 0;
@@ -95,9 +96,9 @@
   }
 
   .slogan-title {
-  width: 70%;
-  opacity: .8;
-  transform: translateY(390px);
-  margin-left: 10%;
+    width: 70%;
+    opacity: 0.8;
+    transform: translateY(390px);
+    margin-left: 10%;
   }
 }
