@@ -1,54 +1,12 @@
 /* main styles */
 
-.page-main {
-  padding: 0 15px;
-  background-color: #fff;
-}
-.team {
-  transform: translateY(-10px);
-  background-color: #fff;
-}
-.team-title {
-  margin-top: 30px;
-  margin-bottom: 15px;
-  text-align: center;
-  color: #14d9c4;
-  font-size: 24px;
-  font-family: "Rubik", sans-serif;
-  padding-top: 46px;
-  padding-bottom: 15px;
-}
 .rectangle {
   background-color: white;
   width: 30px;
   height: 30px;
-  transform: translate(0, 53%) rotate(45deg);
-  margin: auto;
-}
-.features {
-  margin: 0px;
-  padding: 0px;
-  width: 100%;
-  background-color: #f1f1f1;
-}
-
-.title3 {
-  text-align: center;
-  color: #099d8d;
-  padding-top: 30px;
-  font-family: "Rubik", sans-serif;
-  line-height: 45px;
-  font-size: 22px;
-}
-.text {
-  text-align: center;
-  font-size: 16px;
-  line-height: 24px;
-  font-family: "Open Sans", sans-serif;
-  padding-left: 15px;
-  padding-right: 15px;
-  color: #54585a;
-  padding-bottom: 15px;
+  transform: translate(0, 50%) rotate(45deg);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .who {
@@ -103,14 +61,6 @@
   align-items: center;
 }
 
-// .socialNetworks {
-//   display: flex;
-//   justify-content: space-around;
-//   flex-direction: row;
-//   background-color: red;
-//   padding: 10px;
-// }
-
 .fab {
   color: #099d8d;
 }
@@ -119,24 +69,6 @@
 }
 
 @media all and (min-width: 768px) {
-  .team {
-    margin-right: 8rem;
-    margin-left: 8rem;
-  }
-  .rectangle {
-    transform: translate(46px, 50%) rotate(45deg);
-  }
-  .features {
-    padding-bottom: 30px;
-    display: flex;
-  }
-  .description {
-    margin-left: 45px;
-    margin-right: 45px;
-  }
-  .strengh {
-    margin-right: 45px;
-  }
   .whos {
     display: flex;
     flex-wrap: wrap;

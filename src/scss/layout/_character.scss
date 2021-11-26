@@ -1,0 +1,39 @@
+.characteristics {
+  margin: 0px;
+  padding: 0px;
+  background-color: #f1f1f1;
+
+  &__title {
+    text-align: center;
+    color: #099d8d;
+    padding-top: 30px;
+    font-family: "Rubik", sans-serif;
+    line-height: 45px;
+    font-size: 22px;
+  }
+  &__text {
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Open Sans", sans-serif;
+    padding: 15px;
+    color: #54585a;
+  }
+  /* @media all and (min-width: 768px) {
+    .team {
+      margin-right: 8rem;
+      margin-left: 8rem;
+    }
+   
+    .features {
+      padding-bottom: 30px;
+      display: flex;
+    }
+    .description {
+      margin-left: 45px;
+      margin-right: 45px;
+    }
+    .strengh {
+      margin-right: 45px;
+    }*/
+}
