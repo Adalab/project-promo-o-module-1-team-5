@@ -40,26 +40,26 @@
 /*footer*/
 
 @mixin copyFooter {
-    @include openSans;
-    font-size: $smallFS;
-    line-height: $miniLH;
-    text-align: center;
-    color: $coolGrey;
-    @media all and (min-width: 768px) {
-        text-align: left;
-    }
+  @include openSans;
+  font-size: $smallFS;
+  line-height: $miniLH;
+  text-align: center;
+  color: $coolGrey;
+  @media all and (min-width: 768px) {
+    text-align: left;
+  }
 }
 
 @mixin navFooter {
-    @include openSansSemibold;
-    font-size: $smallFS;
-    line-height: $miniLH;
-    text-transform: uppercase;
-    text-align: center;
-    color: $grey;
-    @media all and (min-width: 768px) {
-        text-align: right;
-    }
+  @include openSansSemibold;
+  font-size: $smallFS;
+  line-height: $miniLH;
+  text-transform: uppercase;
+  text-align: center;
+  color: $grey;
+  @media all and (min-width: 768px) {
+    text-align: right;
+  }
 }
 
 /*form*/
@@ -85,11 +85,11 @@
 }
 
 @mixin btnForm {
-    @include openSansSemibold;
-    font-size: $avFS;
-    text-align: center;
-    color: $white;
-    text-transform: uppercase;
+  @include openSansSemibold;
+  font-size: $avFS;
+  text-align: center;
+  color: $white;
+  text-transform: uppercase;
 }
 
 /********PADDING********/

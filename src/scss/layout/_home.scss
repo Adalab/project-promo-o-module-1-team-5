@@ -4,7 +4,7 @@
   flex-direction: column;
   padding-bottom: 45px;
 
-  @media all and (min-width:768px){
+  @media all and (min-width: 768px) {
     flex-direction: row;
   }
 }
@@ -30,13 +30,14 @@
     align-items: center;
 
     &--textname {
-      margin: 0px;
+      @include ourNames;
+      /*margin: 0px;
       padding: 0px;
       font-family: "Open Sans", sans-serif;
       font-size: 20px;
       font-weight: normal;
       line-height: 45px;
-      color: black;
+      color: black;*/
       text-align: center;
     }
 
@@ -103,13 +104,11 @@
     text-align: right;
     margin-right: 20px;
   }
-  .who:nth-child(2n + 1) 
-  .who__content--text {
+  .who:nth-child(2n + 1) .who__content--text {
     text-align: right;
     margin-right: 20px;
   }
-  .who:nth-child(2n + 1) 
-  .who__content--rrss-icons {
+  .who:nth-child(2n + 1) .who__content--rrss-icons {
     text-align: right;
     margin-right: 20px;
   }
