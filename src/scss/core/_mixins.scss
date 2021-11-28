@@ -28,6 +28,7 @@
   font-size: $avFS;
   line-height: $smallLH;
   color: $grey;
+  
 }
 @mixin ourNames {
   @include openSans;

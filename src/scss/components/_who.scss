@@ -1,0 +1,116 @@
+.who {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  text-align: center;
+
+  &__image {
+    border-radius: 4px;
+    border: solid 5px rgba(0, 0, 0, 0.08);
+    align-items: center;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &--textname {
+      @include ourNames;
+    }
+    &--text {
+      @include textMain;
+    }
+    &--rrss-icons {
+      color: #099d8d;
+      width: 124px;
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      margin-top: 15px;
+      margin-bottom: 25px;
+      margin-left: 98px;
+      margin-right: 98px;
+      &a {
+        color: #099d8d;
+      }
+      @media all and (min-width: 768px) {
+        margin-left: 3em;
+        margin-right: 4em;
+      }
+    }
+  }
+}
+
+.fab {
+  color: #099d8d;
+}
+.fas {
+  color: #099d8d;
+}
+
+@media all and (min-width: 768px) {
+  .whos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .who {
+    padding-top: 0;
+    flex-direction: row;
+    padding-bottom: 60px;
+    padding-right: 45px;
+  }
+
+  /*PARA ALINEAR A LA DERECHA*/
+  .who:nth-child(2n) {
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    text-align: left;
+  }
+  .who:nth-child(2n) .who__content {
+    align-items: flex-end;
+
+    margin-left: 45px;
+  }
+  .who:nth-child(2n) .who__image {
+    align-items: flex-end;
+  }
+  .who:nth-child(2n) .who__content--textname {
+    text-align: left;
+    margin-right: 20px;
+  }
+  .who:nth-child(2n) .who__content--text {
+    text-align: right;
+    margin-right: 20px;
+  }
+  .who:nth-child(2n) .who__content--rrss-icons {
+    text-align: right;
+    margin-right: 20px;
+  }
+  /*PARA ALINEAR A LA IZQUIERDA*/
+  .who:nth-child(2n + 1) {
+    text-align: left;
+  }
+  .who:nth-child(2 + 1) .who__content {
+    align-items: flex-start;
+    margin-right: 20px;
+  }
+  .who:nth-child(2n + 1) .who__image {
+    margin-left: 45px;
+    justify-content: flex-end;
+  }
+  .who:nth-child(2n + 1) .who__content--textname {
+    margin-left: 20px;
+    text-align: left;
+  }
+  .who:nth-child(2n + 1) .who__content--text {
+    text-align: left;
+    margin-left: 20px;
+  }
+  .who:nth-child(2n + 1) .who__content--rrss-icons {
+    text-align: left;
+    margin-left: 20px;
+  }
+}
