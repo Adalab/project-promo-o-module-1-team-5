@@ -28,12 +28,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: 'rubik', sans-serif;
+  font-family: $titleFF,$textFF;
   &__title{
-    font-size: 24px;
-    color: #099d8d;
-    text-transform: uppercase;
-    font-weight: 600;
+    @include titleMain;
     padding-bottom: 15px;
   }
   &__text{
@@ -52,28 +49,16 @@
     width: 100%;
 
     &--firstname {
-      display: flex;
-      flex-direction: column;
-      font-size: 14px;
-      color: #54585a;
+        @include distributionForm;
     }
     &--email {
-      display: flex;
-      flex-direction: column;
-      font-size: 14px;
-      color: #54585a;
+      @include distributionForm;
     }
     &--phone {
-      display: flex;
-      flex-direction: column;
-      font-size: 14px;
-      color: #54585a;
+      @include distributionForm;
     }
     &--messaje {
-      display: flex;
-      flex-direction: column;
-      font-size: 14px;
-      color: #54585a;
+      @include distributionForm;
       height: 105px;
       margin-top: 7px;
       text-indent: 10px;
@@ -84,7 +69,7 @@
       height: 45px;
       margin-top: 7px;
       margin-bottom: 13px;
-      border: solid 1px #b8b8b9;
+      border: solid 1px $coolGrey;
       padding: 0;
       text-indent: 10px;
     }
@@ -95,14 +80,9 @@
       padding-top: 10px;
     }
     &--bottom{
-      display: block;
-      text-decoration: none;
-      border-radius: 4px;
-      background-color: #099d8d;
-      color: white;
-      font-size: 16px;
-      border: none;
-      width: 100%;
+
+      @include btnForm;
+     
       @media (min-width: 768px) {
         margin-right: 0;
         margin-left: auto;
@@ -110,8 +90,7 @@
       }
     }
     ::placeholder {
-      color: #b8b8b9;
-      font-size: 14px;
+      @include placeHoldText;
     }
   }
 
@@ -144,5 +123,5 @@
 }
 
 .star {
-  color: #14d9c4;
+  @include asterisk;
 }
