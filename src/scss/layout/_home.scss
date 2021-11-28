@@ -27,6 +27,8 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  padding: 15px;
+  text-align: center;
 
   &__image {
     border-radius: 4px;
@@ -38,7 +40,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+
     &--textname {
       @include ourNames;
     }
@@ -47,12 +49,14 @@
     }
     &--rrss-icons {
       color: #099d8d;
-      width: 150px;
+      width: 124px;
       display: flex;
       justify-content: space-between;
       text-align: center;
       margin-top: 15px;
       margin-bottom: 25px;
+      margin-left: 98px;
+      margin-right: 98px;
       &a {
         color: #099d8d;
       }
@@ -82,7 +86,7 @@
     padding-right: 45px;
   }
 
-  /*PARA ALINEAR A LA IZQUIERDA*/
+  /*PARA ALINEAR A LA DERECHA*/
   .who:nth-child(2n) {
     flex-direction: row-reverse;
     align-items: flex-end;
@@ -91,7 +95,7 @@
   .who:nth-child(2n) .who__content {
     align-items: flex-end;
 
-    margin-left: 100px;
+    margin-left: 45px;
   }
   .who:nth-child(2n) .who__image {
     align-items: flex-end;
@@ -108,13 +112,12 @@
     text-align: right;
     margin-right: 20px;
   }
-  /*PARA ALINEAR A LA DERECHA*/
+  /*PARA ALINEAR A LA IZQUIERDA*/
   .who:nth-child(2n + 1) {
     text-align: left;
-    align-items: flex-start;
   }
   .who:nth-child(2 + 1) .who__content {
-    align-items: flex-end;
+    align-items: flex-start;
     margin-right: 20px;
   }
   .who:nth-child(2n + 1) .who__image {
