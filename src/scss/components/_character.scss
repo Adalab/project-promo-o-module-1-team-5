@@ -15,10 +15,24 @@
     font-family: $titleFF;
     line-height: $titleLH;
     font-size: $titleMinusFS;
+    @media all and (min-width: 768px) {
+      padding-right: 45px;
+      padding-left: 45px;
+      padding-bottom: 0;
+    }
   }
   &__text {
     @include textMain;
     padding: 15px;
     text-align: center;
+    @media all and (min-width: 768px) {
+      padding-right: 45px;
+      padding-left: 45px;
+      padding-bottom: 60px;
+    }
+    @media all and (min-width: 1024px) {
+      padding-right: 138px;
+      padding-left: 138px;
+    }
   }
 }
