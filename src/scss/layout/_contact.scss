@@ -1,5 +1,11 @@
 .columna-contacto {
   margin: auto 15px;
+  @media (min-width: 768px) {
+    margin: auto 163px;
+  }
+  @media (min-width: 1280px) {
+    margin: auto 300px;
+  }
 }
 
 .container {
@@ -8,6 +14,11 @@
 }
 .foto-contact {
   background-image: url("../images/image_contactMobile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 300px;
   @media all and (min-width: 768px) {
     background-image: url("../images/image_contactDesktop.jpg");
   }
@@ -18,92 +29,120 @@
   flex-direction: column;
   align-items: center;
   font-family: 'rubik', sans-serif;
+  &__title{
+    font-size: 24px;
+    color: #099d8d;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-bottom: 15px;
+  }
+  &__text{
+    color: #54585a;
+    line-height: 1.5;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+  &__text-all {
+    font-size: 12px;
+    padding-bottom: 15px;
+  } 
+  &__form {
+    margin-top: 58px;
+    text-align: left;
+    width: 100%;
+
+    &--firstname {
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+      color: #54585a;
+    }
+    &--email {
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+      color: #54585a;
+    }
+    &--phone {
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+      color: #54585a;
+    }
+    &--messaje {
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+      color: #54585a;
+      height: 105px;
+      margin-top: 7px;
+      text-indent: 10px;
+      padding-top: 10px;
+    }
+    &--box {
+      width: 100%;
+      height: 45px;
+      margin-top: 7px;
+      margin-bottom: 13px;
+      border: solid 1px #b8b8b9;
+      padding: 0;
+      text-indent: 10px;
+    }
+    &--box-text {
+      height: 105px;
+      margin-top: 7px;
+      text-indent: 10px;
+      padding-top: 10px;
+    }
+    &--bottom{
+      display: block;
+      text-decoration: none;
+      border-radius: 4px;
+      background-color: #099d8d;
+      color: white;
+      font-size: 16px;
+      border: none;
+      width: 100%;
+      @media (min-width: 768px) {
+        margin-right: 0;
+        margin-left: auto;
+        width: 206px;
+      }
+    }
+    ::placeholder {
+      color: #b8b8b9;
+      font-size: 14px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    &__form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      &--name {
+        width: 100%;
+      }
+      &--email {
+        width: 50%;
+        margin-right: 45px;
+      }
+      &--phone {
+        width: 25%;
+        flex-grow: 1;
+      }
+      &--text {
+        width: 100%;
+      }
+      &--bottom {
+        margin-left: 0;
+        margin-right: auto;
+        width: 278px;
+      }
+    }
+  }
 }
-.title-contact {
-  font-size: 24px;
-  color: #099d8d;
-  text-transform: uppercase;
-  font-weight: 600;
-  padding-bottom: 15px;
-}
-.text-contact {
-  color: #54585a;
-  line-height: 1.5;
-  text-align: center;
-  padding-bottom: 15px;
-}
-.text-all {
-  font-size: 12px;
-  padding-bottom: 15px;
-}
-.contact-form {
-  margin-top: 58px;
-  text-align: left;
-  width: 100%;
-}
+
 .star {
   color: #14d9c4;
-}
-
-.form-name {
-  display: flex;
-  flex-direction: column;
-  font-size: 14px;
-  color: #54585a;
-}
-.contact-email {
-  display: flex;
-  flex-direction: column;
-  font-size: 14px;
-  color: #54585a;
-}
-.contact-phone {
-  display: flex;
-  flex-direction: column;
-  font-size: 14px;
-  color: #54585a;
-}
-.contact-messaje {
-  display: flex;
-  flex-direction: column;
-  font-size: 14px;
-  color: #54585a;
-  height: 105px;
-  margin-top: 7px;
-  text-indent: 10px;
-  padding-top: 10px;
-}
-.formulario-box {
-  width: 100%;
-  height: 45px;
-  margin-top: 7px;
-  margin-bottom: 13px;
-  border: solid 1px #b8b8b9;
-  padding: 0;
-  text-indent: 10px;
-}
-.boton-formulario {
-  display: block;
-  text-decoration: none;
-  border-radius: 4px;
-  background-color: #099d8d;
-  color: white;
-  font-size: 16px;
-  border: none;
-  width: 100%;
-}
-.contact-form ::placeholder {
-  color: #b8b8b9;
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  .contact-form--bottom {
-    margin-right: 0;
-    margin-left: auto;
-    width: 206px;
-  }
-  .columna-contacto {
-    margin: auto 163px;
-  }
 }
