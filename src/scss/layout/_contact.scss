@@ -1,109 +1,160 @@
-.columna-contacto {
-  margin: auto 15px;
-}
-
-.container {
-  margin-top: 30px;
-  margin-bottom: 60px;
-}
 .foto-contact {
   background-image: url("../images/image_contactMobile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 300px;
   @media all and (min-width: 768px) {
     background-image: url("../images/image_contactDesktop.jpg");
   }
 }
-
-.section-contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: 'rubik', sans-serif;
-}
-.title-contact {
-  font-size: 24px;
-  color: #099d8d;
-  text-transform: uppercase;
-  font-weight: 600;
-  padding-bottom: 15px;
-}
-.text-contact {
-  color: #54585a;
-  line-height: 1.5;
-  text-align: center;
-  padding-bottom: 15px;
-}
-.text-all {
-  font-size: 12px;
-  padding-bottom: 15px;
-}
-.contact-form {
-  margin-top: 58px;
-  text-align: left;
-  width: 100%;
-}
-.star {
-  color: #14d9c4;
-}
-
-.form-name {
-  display: flex;
-  flex-direction: column;
-  font-size: 14px;
-  color: #54585a;
-}
-.contact-email {
-  display: flex;
-  flex-direction: column;
-  font-size: 14px;
-  color: #54585a;
-}
-.contact-phone {
-  display: flex;
-  flex-direction: column;
-  font-size: 14px;
-  color: #54585a;
-}
-.contact-messaje {
-  display: flex;
-  flex-direction: column;
-  font-size: 14px;
-  color: #54585a;
-  height: 105px;
-  margin-top: 7px;
-  text-indent: 10px;
-  padding-top: 10px;
-}
-.formulario-box {
-  width: 100%;
-  height: 45px;
-  margin-top: 7px;
-  margin-bottom: 13px;
-  border: solid 1px #b8b8b9;
-  padding: 0;
-  text-indent: 10px;
-}
-.boton-formulario {
-  display: block;
-  text-decoration: none;
-  border-radius: 4px;
-  background-color: #099d8d;
-  color: white;
-  font-size: 16px;
-  border: none;
-  width: 100%;
-}
-.contact-form ::placeholder {
-  color: #b8b8b9;
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  .contact-form--bottom {
-    margin-right: 0;
-    margin-left: auto;
-    width: 206px;
+.contact-main {
+  padding: 0 15px;
+  & .title-contact {
+    @include titleMain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    @media (min-width: 768px) {
+      font-size: 28px;
+    }
   }
-  .columna-contacto {
-    margin: auto 163px;
+  & .text-contact {
+    @include textMain;
+    text-align: center;
+    padding-top: 0%;
+    padding-bottom: 30px;
+    @media (min-width: 768px) {
+      padding: 0 163px 30px;
+      font-size: 18px;
+    }
+    @media (min-width: 1200px) {
+      padding: 0 300px 30px;
+    }
+  }
+  & .small {
+    font-size: 12px;
+    color: $grey;
+    @include openSans;
+    text-align: center;
+    padding-bottom: 58px;
+    @media (min-width: 768px) {
+      font-size: 14px;
+    }
+  }
+}
+span {
+  @include asterisk;
+}
+.form {
+  padding: 0 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 3rem;
+  @media (min-width: 768px) {
+    padding: 0 163px;
+  }
+  @media (min-width: 1200px) {
+    padding: 0 300px;
+  }
+  & label {
+    font-size: $smallFS;
+    @include openSans;
+    color: $grey;
+    @media (min-width: 768px) {
+      font-size: $avFS;
+    }
+  }
+  & input {
+    height: 45px;
+    width: 100%;
+    margin-top: 7px;
+    margin-bottom: 13px;
+    border: 1px solid $coolGrey;
+    padding-left: 15px;
+  }
+  ::placeholder {
+    @include placeHoldText;
+    @media (min-width: 768px) {
+      font-size: $avFS;
+    }
+  }
+  #email::placeholder {
+    color: $grey;
+    font-size: $avFS;
+    @media (min-width: 768px) {
+      font-size: $avPlusFS;
+    }
+  }
+  & #textarea {
+    width: 100%;
+    height: 105px;
+    margin-top: 7px;
+    margin-bottom: 30px;
+    border: 1px solid $coolGrey;
+    padding-left: 15px;
+  }
+  & .send {
+    width: 100%;
+    height: 45px;
+    margin-bottom: 60px;
+    border-radius: 4px;
+    color: $white;
+    font-size: $avFS;
+    background-color: $aqua;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+}
+.name {
+  grid-column: 1/8;
+}
+.email {
+  grid-column: 1/8;
+}
+.phone {
+  grid-column: 1/8;
+}
+.message {
+  grid-column: 1/8;
+}
+.send {
+  grid-column: 1/8;
+}
+@media (min-width: 768px) {
+  .name {
+    grid-column: 1/8;
+  }
+  .email {
+    grid-column: 1/8;
+  }
+  .phone {
+    grid-column: 1/8;
+  }
+  .message {
+    grid-column: 1/8;
+  }
+  .send {
+    grid-column: 5/8;
+  }
+}
+@media (min-width: 1200px) {
+  .name {
+    grid-column: 1/8;
+  }
+  .email {
+    grid-column: 1/6;
+  }
+  .phone {
+    grid-column: 6/8;
+  }
+  .message {
+    grid-column: 1/8;
+  }
+  .send {
+    grid-column: 5/8;
   }
 }
